@@ -34,7 +34,7 @@ import Zidio from './Zidio.png'
 import facebook from './facebook.jpg'
 import JobScout from './JobScout.png'
 import Netflix from './Netflix.jpg'
- 
+ import aws from './Aws.png'
 export {
     css,
     express,
@@ -71,6 +71,7 @@ export {
     Zidio,
     facebook,
     JobScout,
-    Netflix
+    Netflix,
+    aws
 
 }

@@ -23,7 +23,8 @@ import {
     Zidio,
     facebook,
     JobScout,
-    Netflix
+    Netflix,
+    aws
     
     
 } from "../assets/icons";
@@ -93,6 +94,11 @@ export const skills = [
         imageUrl: typescript,
         name: "TypeScript",
         type: "Frontend",
+    },
+    {
+        imageUrl: aws,
+        name: "AWS",
+        type: "Cloud-Computing",
     }
 ];
 
