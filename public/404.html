@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Page Not Found</title>
-  </head>
-  <body>
-    <script type="text/javascript">
-      // Preserve the path and redirect to the correct base
-      var path = window.location.pathname.replace('/Shubham-Thakur-Portfolio', '');
-      window.location.replace('/Shubham-Thakur-Portfolio/?' + path);
-    </script>
-  </body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found</title>
+</head>
+<body>
+  <script>
+    // Redirect to home page for all unmatched routes
+    window.location.replace('/Shubham-Thakur-Portfolio/');
+  </script>
+</body>
 </html>
