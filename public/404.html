@@ -1,42 +1,14 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Page Not Found</title>
-</head>
-<body>
-  <script>
-    // Redirect to home page for all unmatched routes
-    window.location.replace('/Shubham-Thakur-Portfolio/');
-  </script>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Shubham Portfolio </title>
-    <script type="text/javascript">
-      var pathSegmentsToKeep = 1;
-
-      var l = window.location;
-      l.replace(
-        l.protocol +
-          "//" +
-          l.hostname +
-          (l.port ? ":" + l.port : "") +
-          l.pathname
-            .split("/")
-            .slice(0, 1 + pathSegmentsToKeep)
-            .join("/") +
-          "/?/" +
-          l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join("/").replace(/&/g, "~and~") +
-          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
-          l.hash
-      );
-    </script>
+    <meta charset="UTF-8" />
+    <title>Page Not Found</title>
   </head>
-  <body></body>
+  <body>
+    <script type="text/javascript">
+      // Preserve the path and redirect to the correct base
+      var path = window.location.pathname.replace('/Shubham-Thakur-Portfolio', '');
+      window.location.replace('/Shubham-Thakur-Portfolio/?' + path);
+    </script>
+  </body>
 </html>
